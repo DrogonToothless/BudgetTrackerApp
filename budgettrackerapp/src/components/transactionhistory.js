@@ -1,6 +1,6 @@
 function TransactionHistory() {
     return (
-        <h1>hey</h1>
+        <h1>Transaction History</h1>
     );
 }
 export default TransactionHistory;

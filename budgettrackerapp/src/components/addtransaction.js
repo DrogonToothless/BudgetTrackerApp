@@ -1,6 +1,6 @@
 function AddTransaction() {
     return (
-        <h1>hey</h1>
+        <h1>Add Transaction</h1>
     );
 }
 export default AddTransaction;
