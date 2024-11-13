@@ -1,12 +1,24 @@
 import { useState } from "react";
 function TotalBalance() {
-    function yourBalance() {
-        const [balance, setBalance] = useState("0");
-    }
+    const [balance, setBalance] = useState("0");
+    const [income, setIncome] = useState("0");
+    const [expense, setExpense] = useState("0");
     return (
         <div>
-            <h1>Total Balance</h1>
-            <h3>{balance}</h3>
+            <div>
+                <h1>Total Balance</h1>
+                <h3>{balance}</h3>
+            </div>
+            <div className="incomeandexpense">
+                <div className="income"> 
+                    <h4>Income</h4>
+                    <h5>+${income}</h5>
+                </div>
+                <div className="expense">
+                    <h4>Expense</h4>
+                    <h5>+${expense}</h5>
+                </div>
+            </div>
         </div>
     );
 }

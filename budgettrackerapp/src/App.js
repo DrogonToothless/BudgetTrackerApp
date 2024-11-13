@@ -10,9 +10,11 @@ function App() {
           <h1>Budget Tracker</h1>
         </div>
       </header>
-      <TotalBalance />
-      <TransactionHistory />
-      <AddTransaction />
+      <div className="app">
+        <TotalBalance />
+        <TransactionHistory />
+        <AddTransaction />
+      </div>
     </section>
   );
 }

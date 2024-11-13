@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+section {
+  display: grid;
+}
 header {
   width: 100%;
   height: 80px;
@@ -11,4 +18,23 @@ header div {
 header div h1 {
   color: white;
   font-size: 25px;
+  margin-top: 20px;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  width: 400px;
+}
+.incomeandexpense {
+  display: flex;
+}
+.income {
+  flex: 2;
+  color: rgb(88, 144, 88);
+}
+.expense {
+  flex: 2;
+  color: rgb(227, 70, 70);
 }
