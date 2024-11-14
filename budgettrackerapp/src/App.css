@@ -38,3 +38,11 @@ header div h1 {
   flex: 2;
   color: rgb(227, 70, 70);
 }
+.addtransaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.addtransaction button {
+  width: 80%;
+}
