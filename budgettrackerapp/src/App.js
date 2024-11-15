@@ -1,13 +1,11 @@
 import './App.css';
 import { useState } from "react";
-
 function App() {
   const [balance, setBalance] = useState(0);
   const [income, setIncome] = useState(0);
   const [expense, setExpense] = useState(0);
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
-
   const handleAddIncome = () => {
     const numAmount = parseFloat(amount);
     if (!isNaN(numAmount) && numAmount > 0) {
@@ -17,7 +15,6 @@ function App() {
       setAmount(0);
     }
   };
-
   const handleAddExpense = () => {
     const numAmount = parseFloat(amount);
     if (!isNaN(numAmount) && numAmount > 0) {
@@ -27,7 +24,6 @@ function App() {
       setAmount(0);
     }
   };
-
   return (
     <section>
       <header>
@@ -36,7 +32,7 @@ function App() {
         </div>
       </header>
       <div className="app">
-        <div>
+        <div className="balances">
           <div>
             <h1>Total Balance</h1>
             <h3>${balance}</h3>
@@ -52,7 +48,9 @@ function App() {
             </div>
           </div>
         </div>
-        <h1>Transaction History</h1>
+        <div className='history'>
+          <h1>Transaction History</h1>
+        </div>
         <div className="addtransaction">
           <h1>Add Transaction</h1>
           <h4>Text</h4>
@@ -76,5 +74,4 @@ function App() {
     </section>
   );
 }
-
 export default App;
